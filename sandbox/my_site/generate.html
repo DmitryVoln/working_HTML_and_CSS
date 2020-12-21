@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Личный сайт студента GeekBrains</title>
-	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript">
 
-		
 
-		function readInt(userAnswer){
+
+		function readInt(userAnswer) {
 			var number = document.getElementById(userAnswer).value;
 			return parseInt(number);
 			// return +document.getElementById("userAnswer").value;
 		}
 
-		function write(text){
+		function write(text) {
 			document.getElementById("user1").innerHTML = text;
 		}
 
-		function hide(id){
+		function hide(id) {
 			document.getElementById(id).style.display = "none";
 		}
 
-		function getRandom (max) {
-		return parseInt(Math.random() * max);
-    	}
+		function getRandom(max) {
+			return parseInt(Math.random() * max);
+		}
 
-		var symbols = ['0', '1', '2', '3', '4', '5', '6', '7','8', '9', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', ];
+		var symbols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',];
 
 
 
@@ -47,41 +48,43 @@
 
 	</script>
 </head>
+
 <body>
 
-<div class="content">
-	<div class="header">
-		<a href="index.html">Главная</a>
-		<a href="puzzle.html">Загадки</a>
-		<a href="guess.html">Угадайка</a>
-		<a href="#">Генератор пароля</a>
-	</div>
+	<div class="content">
+		<div class="header">
+			<a href="index.html">Главная</a>
+			<a href="puzzle.html">Загадки</a>
+			<a href="guess.html">Угадайка</a>
+			<a href="#">Генератор пароля</a>
+		</div>
 
-<div class="contentWrap">
-    <div class="content">
-        <div class="center">
+		<div class="contentWrap">
+			<div class="content">
+				<div class="center">
 
-			<h1>Генератор пароля</h1>
+					<h1>Генератор пароля</h1>
 
-			<div class="box">
+					<div class="box">
 
-				<p id="user1">Введите длину желаемого пароля (не более 70 символов)</p>
-				<input type="text" id="passwordLength">
-				<br>
-				<a href="#" onClick="generate();" id="button">создать пароль</a>				
+						<p id="user1">Введите длину желаемого пароля (не более 70 символов)</p>
+						<input type="text" id="passwordLength">
+						<br>
+						<a href="#" onClick="generate();" id="button">создать пароль</a>
+					</div>
+
+				</div>
 			</div>
+		</div>
 
-        </div>
-    </div>
-</div>
 
-	
 
-</div>
-<div class="footer">
-	Copyright &copy; Dmitry
-<div>
+	</div>
+	<div class="footer">
+		Copyright &copy; Dmitry
+		<div>
 
 
 </body>
+
 </html>
