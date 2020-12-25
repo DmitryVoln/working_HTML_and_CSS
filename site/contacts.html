@@ -9,66 +9,72 @@
 </head>
 
 <body>
-	<ul class="header">
-		<li><a href="index.html">Главная</a></li>
-		<li><a href="contacts.html">контакты</a></li>
-	</ul>
-	<div class="contacts_header">
-		<h2 class="contacts">Contact Us</h2>
-		<p class="text">Наши контакты:</p>
+	<div class="container">
+		<ul class="header">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="contacts.html">контакты</a></li>
+		</ul>
+		<div class="contacts_header">
+			<h2 class="contacts">Contact Us</h2>
+			<p class="text">Наши контакты:</p>
+		</div>
+		<form class="container main" action="#">
+			<div class="contacts_info">
+				<img src="images/img_phone.jpg" width="250" height="250" alt="изображение телефона">
+				<h4 class="heading_mini">Address</h4>
+				<p class="text">СПБ</p>
+				<h4 class="heading_mini">Phone</h4>
+				<ul>
+					<li>333-22-55</li>
+					<li>333-22-77</li>
+				</ul>
+				<h4 class="heading_mini">Online service</h4>
+				<ul>
+					<li><a href="http//geek.ru">geek.ru</a></li>
+					<li><a href="strelx@mail.ru">e-mail</a></li>
+				</ul>
+
+
+			</div>
+			<div class="form">
+				<h4 class="heading_mini">Send us massage</h4>
+				Full name <input type="text" class="input" placeholder="Fedya"></br>
+				Email <input type="email" class="input" placeholder="email"></br>
+				Message: </br>
+				<textarea class="input_text" cols="30" rows="5"></textarea></br>
+				<button class="button_submit" type="submit">Отправить</button>
+			</div>
+		</form>
+
+
+		<div class="map_block">
+			<iframe
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A3333363f43088a45fd1e2e89aaa5ecabb0ecd7c57877ca6160b73461466ca2dd&amp;source=constructor"
+				width="100%" height="400" frameborder="0"></iframe>
+		</div>
 	</div>
-	<form action="#">
-		<div class="contacts_info">
-			<img src="images/img_phone.jpg" width="250" height="250" alt="изображение телефона">
-			<h4 class="heading_mini">Address</h4>
-			<p class="text">СПБ</p>
-			<h4 class="heading_mini">Phone</h4>
-			<ul>
-				<li>333-22-55</li>
-				<li>333-22-77</li>
-			</ul>
-			<h4 class="heading_mini">Online service</h4>
-			<ul>
-				<li><a href="http//geek.ru">geek.ru</a></li>
-				<li><a href="strelx@mail.ru">e-mail</a></li>
-			</ul>
 
-
-		</div>
-		<div class="form">
-			<h4 class="heading_mini">Send us massage</h4>
-			Full name <input type="text" class="input" placeholder="Fedya"></br>
-			Email <input type="email" class="input" placeholder="email"></br>
-			Message: </br>
-			<textarea class="input_text" cols="30" rows="5"></textarea></br>
-			<button class="button_submit" type="submit">Отправить</button>
-		</div>
-	</form>
-
-
-
-
-	<script type="text/javascript" charset="utf-8" async
-		src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a6fd8e6652ffe29cab24c6b393938977639de9056085d9711b7c3f22e34395b&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
-		</script>
 	<div class="footer">
-		<div class="footer_top">
-			<div class="footer_text">
-				<h3 class="heading">Третий раздел</h3>
-				<p class="text">В это раздел попадет, что не попало в первые два раздела.</p>
+		<div class="container">
+			<div class="footer_top">
+				<div class="footer_text">
+					<h3 class="heading heading_footer">Третий раздел</h3>
+					<p class="text">В это раздел попадет, что не попало в первые два раздела.</p>
+				</div>
+			</div>
+			<hr>
+			<div class="footer_bottom">
+				<ul class="footer_info">
+					<li class="info">наши контакты:</li>
+					<li class="info">телефон: +7-812-335-35-35</li>
+					<li class="info">e-mail: strelx@mail.ru</li>
+				</ul>
+				<div>
+					<p class="text">&copy; Все права защищены.</p>
+				</div>
 			</div>
 		</div>
-		<hr>
-		<div class="footer_bottom">
-			<ul class="footer-info">
-				<li>наши контакты:</li>
-				<li>телефон: +7-812-335-35-35</li>
-				<li>e-mail: strelx@mail.ru</li>
-			</ul>
-			<div>
-				<p class="text">Все права защищены.</p>
-			</div>
-		</div>
+	</div>
 	</div>
 </body>
 

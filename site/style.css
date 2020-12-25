@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .font_type {
     font-family: sans-serif;
 }
@@ -11,6 +16,7 @@
 .heading_top {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
 }
 
 .contacts {
@@ -49,4 +55,46 @@
     text-transform: uppercase;
 }
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_top {
+    width: 425px;
+}
+
+.card_box {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.card {
+    width: 359px;
+    height: 359px;
+    border: 1px solid;
+}
+.footer_top {
+    width: 495px;
+}
+.heading_footer {
+    width: 340px;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+}
+
+.info {
+    flex-grow: 1; /* для списка li в контактах на главной в футере и для страницы contacts*/
+}
