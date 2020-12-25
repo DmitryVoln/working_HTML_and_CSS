@@ -1,0 +1,143 @@
+.font {
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #040c16;
+}
+
+.top_heading {
+    font-size: 54px;
+    color: #1F3F68;
+    padding: 10px 10px;
+    border: 10px solid #8B4513;
+    text-align: center;
+
+}
+
+.contacts {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+.heading_mini {
+    font-size: 20px;
+    line-height: 30px;
+    color:#1F3F68;
+}
+
+.input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button {
+    background: #5a98d0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+
+
+.hat {
+    border: 1px solid #8B4513;
+    margin-bottom: 50px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.greeting {
+    border: 1px solid #356EAD;
+    width: 800px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.basic {
+    border: 3px solid #8B4513;
+    margin-bottom: 50px;
+}
+
+.part1 {
+    border: 3px solid #356EAD;
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.part2 {
+    border: 3px solid #356EAD;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.part3 {
+    border: 3px solid #356EAD;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.hat_contacts {
+    border: 1px solid #d6e5f7;
+    margin-bottom: 50px;
+    background: #4a769c;
+    height: 150px;
+}
+
+.form {
+    border: 3px solid #d8cb1b;
+    height: 500px;
+    float: right;
+}
+
+.map {
+    margin: 150px 500px 0px;
+}
+
+.footer {
+    border: 1px solid #9db2ca;
+    margin-bottom: 50px;
+    background: #0b3f6d;
+    height: 300px;
+
+}
+
+.footer_border {
+    border: 3px solid #8B4513;
+    margin-bottom: 50px;
+    height: 500px;
+    background-color: #083d6b;
+}
+
+.basic_contacts {
+    border: 3px solid #8B4513;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+
+
+* {
+    margin: 0px; /* обнуление значений, которые были по умолчанию*/
+    padding: 0px; /* обнуление значений, которые были по умолчанию*/
+}

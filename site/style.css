@@ -1,19 +1,14 @@
-.font {
+.font_type {
     font-family: sans-serif;
 }
 
-.greeting,
-.speach1, 
-.speach2,
-.speach3,
-.speach4,
-.info {
+.text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 }
 
-.mainInfo {
+.heading_top {
     font-size: 64px;
     color: #1F3F68;
 }
@@ -24,12 +19,12 @@
     text-align: center;
 }
 
-.headerContains {
+.heading {
     font-size: 36px;
     text-align: center;
 }
 
-.subHeader {
+.heading_mini {
     font-size: 20px;
     line-height: 30px;
     color:#1F3F68;
