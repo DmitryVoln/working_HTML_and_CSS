@@ -346,6 +346,27 @@
     .card {
         margin-bottom: 32px;
     }
+
+    .footer_top {
+        padding-left: 124px;
+    }
+
+    .footer_button {
+        padding: 4px 30px;
+    }
+
+    .footer_bottom {
+        padding-left: 124px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+    }
+
+    .info {
+        margin-bottom: 25px;
+    }
+
 }
 
 @media (max-width: 667px) {
@@ -437,5 +458,69 @@
         top: 26px;
         left: 16px;
     }
+
+    .footer {
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
+
+    .footer_top {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .heading_footer {
+        width: 100%;
+        padding-top: 18px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .footer_blocks {
+        width: 100%;
+    }
+
+    .footer_text {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-top: 32px;
+    }
+    .info {
+        margin-bottom: 17px;
+        line-height: 19px;
+    }
+
+    .text_copywrite {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .info:first-child::before {
+        content: "1. ";
+        display: block;
+        margin-right: 16px;
+    }
+    
+    .info:nth-child(2)::before {
+        content: "2. ";
+        display: block;
+        margin-right: 16px;
+    }
+    
+    .info:nth-child(3)::before {
+        content: "3. ";
+        display: block;
+        margin-right: 16px;
+    }
+    
 }
 
