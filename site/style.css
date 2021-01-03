@@ -4,8 +4,23 @@
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.wrapper {
+    min-height: 100vh; /*класс wrapper и top_container  созданы для прижатия футера к полу, сделали флекс-дирекшн: коламн и гроу 1(чтобы он заполнии все пространство, кроме того, что в футере. И добавили min-height: 100 значений высоты, чтобы заняло весь экран;)*/
+    display: flex;
+    flex-direction: column;
+}
+
+.top_container {
+    flex-grow: 1;
+}
+
+.top_content {
+    display: flex;
+    flex-direction: column;
 }
 
 .content_box {
@@ -45,6 +60,7 @@
     background-image: url("images/illustration.png"); /*фоном высталяем картинку */
     background-repeat: no-repeat; /*она может повторяться, задаем: "не повторяться"*/
     background-position: right center; /*и выравнивание: с правйо стороны  по центру*/
+    background-size: 39%;
 }
 
 .heading_top {
@@ -166,12 +182,16 @@
 .footer {
     margin-top: 112px;
     padding-top: 91px;
-    height: 657px;
+    padding-bottom: 64px;
     background: #316099;
 }
 
 .footer_top {
-        /*убрал width*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+
 }
 
 .footer_blocks {
@@ -179,18 +199,13 @@
 }
 
 .heading_footer {
-  padding-right: 700px;/*сам задал значение, иначе становилось 3 строки*/
+    width: 380px;/*сам задал значение padding, иначе становилось 3 строки*/
     font-size: 36px;
     line-height: 46px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-}
-
-.footer_blocks_flex {
-    margin-top: 32px;
-    margin-bottom: 96px;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 32px;
+    text-align: left;
 }
 
 .footer_text {
@@ -207,10 +222,7 @@
     justify-content: space-between;
 }
 
-.footer_button_wrap {
-    background: #5A98D0;
-    padding: 15px 80px;
-}
+
 
 .footer_button {
     font-size: 16px;
@@ -219,6 +231,9 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
     align-self: center;
+    background: #5A98D0;
+    padding: 15px 80px;
+    text-decoration: none;
 }
 
 .line {
@@ -258,6 +273,17 @@
     right: 64px;
 }
 
+.project_text_mini {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+
+}
+
 .project_parent {
     display: flex;
     justify-content: space-between;
@@ -274,21 +300,142 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     flex-grow: 1; /* для списка li в контактах на главной в футере и для страницы contacts*/
-    list-style-type: upper-alpha;
+    list-style-type: none;
+    margin-right: 32px;
+    flex-basis: 33%; /*если его не задать, то при большом колечестве текста он будет "наезжать" на следующий блок, а так все блоки будут по 1/3 занимать*/
+    display: flex;
 }
 
-.bage_1 {
-
+.info:first-child::before {
+    content: "A. ";
+    display: block;
+    margin-right: 16px;
 }
 
-.bage_2 {
-
+.info:nth-child(2)::before {
+    content: "T. ";
+    display: block;
+    margin-right: 16px;
 }
 
-.bage_3 {
-
+.info:nth-child(3)::before {
+    content: "E. ";
+    display: block;
+    margin-right: 16px;
 }
 
 .text_copywrite {
     margin-top: 64px;
+    opacity: 0.4;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top_info {
+        background-position: right 190px;
+    }
+    .card_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .heading_top {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header {
+        padding-top: 24px;
+    }
+
+    .text_top {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_info {
+        padding-top: 33px;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+
+    }
+
+    .top_button {
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    padding:  0 8px;
+    }
+
+    .top {
+        min-height: 375px;
+        padding-bottom: 41px;
+        box-sizing: border-box; /*чтобы padding не сделал высоту элемента намного больше, если она будет фиксированной, то есть padding не учитывается в подсчетах ширины и высоты*/
+    }
+
+    .what_we_do {
+        padding-top: 48px;
+    }
+
+    .card_box {
+        padding-top: 32px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    }
+
+    .text_project {
+        margin-bottom: 98px;
+        width: 100%;
+    }
+
+    .project_parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project_item_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .project_text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    top: 16px;
+    right: 16px;
+    }
+
+    .project_text_mini {
+        font-size: 16px;
+        line-height: 19px;
+        top: 26px;
+        left: 16px;
+    }
+}
+
