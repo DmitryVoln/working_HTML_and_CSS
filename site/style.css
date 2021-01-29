@@ -73,6 +73,58 @@
     margin-bottom: 32px;
 }
 
+.contacts_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+    margin-bottom: 60px;
+    background-image: url("images/contacts.png"); /*фоном высталяем картинку */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.contacts {
+    padding-top: 51px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.contacts_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_info {
+    margin-top: 150px;
+}
+
+.form {
+    padding: 56px 56px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+}
+
+.map_block {
+    margin-top: 96px;
+}
+
+.text_header {
+    width: 780px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 40px;
+}
+
 .top_button {
     font-size: 16px;
     line-height: 26px;
@@ -92,12 +144,6 @@
     padding-top: 64px;
 }
 
-.contacts {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
-}
-
 .heading {
     font-size: 36px;
     text-align: center;
@@ -107,18 +153,71 @@
 }
 
 .heading_mini {
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color:#1F3F68;
-    letter-spacing: 0.05em;
-    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 48px;
+    margin-top: 56px;
+}
+
+.heading_mini_margin {
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.text_form {
+    width: 299px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    height: 53px;
 }
 
 .input {
+    width: 428px;
+    height: 72px;    
+    opacity: 0.4;
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.input_text {
+    width: 428px;
+    height: 144px;
     opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.feedback {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.button_submit {
+    margin-top: 72px;
+    height: 72px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    width: 428px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+
 }
 
 .button {
@@ -146,6 +245,19 @@
 
 .link {
     list-style-type: none;
+}
+
+.phone {
+    list-style-image: url("images/phone.svg");
+}
+
+.site {
+    list-style-image: url("images/site.svg");
+    margin-bottom: 16px;
+}
+
+.mail {
+    list-style-image: url("images/mail.svg");
 }
 
 .card_box {
@@ -349,6 +461,11 @@
 
     .footer_top {
         padding-left: 124px;
+        justify-content: normal;
+    }
+
+    .footer_blocks {
+        margin-right: 50px;
     }
 
     .footer_button {
@@ -365,6 +482,32 @@
 
     .info {
         margin-bottom: 25px;
+    }
+
+    .contacts {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .contacts_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts_info {
+        margin-top: 0px;
+    }
+
+    .text_header {
+        width: 75%;
+    }
+
+    .container_map {
+        padding: 0 0;
+    }
+
+    .mail {
+        margin-bottom: 64px;
     }
 
 }
@@ -479,7 +622,7 @@
     }
 
     .footer_blocks {
-        width: 100%;
+       margin-right: 0;
     }
 
     .footer_text {
@@ -521,6 +664,55 @@
         display: block;
         margin-right: 16px;
     }
+
+    .contacts_header {
+        background-size: auto;
+    }
+
+    .contacts {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+
+    .text_header {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .phone {
+        margin-left: 25px;
+    }
+
+    .site {
+        margin-left: 25px;
+    }
+
+    .site {
+        margin-left: 25px;
+    }
+
+    .mail {
+        margin-left: 25px;
+    }
+    
+    .input {
+    width: 271px;
+    }
+
+    .button_submit {
+        width: 271px;
+    }
+
+    .input_text {
+        width: 271px;
+    }
+
+    .feedback {
+        margin-top: 21px;
+        margin-bottom: 0;
+    }
+
     
 }
 
