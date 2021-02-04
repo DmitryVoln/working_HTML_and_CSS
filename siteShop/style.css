@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background: #222222;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.navbar_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_icons_left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_icons_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_icon1 {
+    margin-top: 18px;
+    margin-right: 41px;
+    width: 44px;
+    height: 38px;
+}
+
+.navbar_icon2 {
+    margin-top: 28px;
+    width: 26px;
+    height: 26px;
+}
+
+.navbar_icon3 {
+    margin-top: 30px;
+    margin-right: 33px;
+    width: 32px;
+    height: 23px;
+}
+
+.navbar_icon4 {
+    margin-top: 26px;
+    margin-right: 33px;
+    width: 29px;
+    height: 29px;
+
+}
+.navbar_icon5 {
+    margin-top: 18px;
+    width: 32px;
+    height: 29px;
+}
+
+.content_top {
+    background: #F1E4E6;
+}
+
+.top_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.man {
+    width: 800px;
+    height: 764px;
+    margin-right: 63px;
+    margin-left: -220px;
+}
+
+.label {
+    width: 500px;
+    align-self: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.three_picture {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 65px;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture_text {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.stretched {
+    position: absolute;
+    top: 55px;
+    right: 500px;
+}
+
+.top_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    margin-top: 96px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.info_items {
+    margin-top: 6px;
+    margin-bottom: 48px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.patterns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.patterns_el {
+    margin-bottom: 30px;
+}
+
+/*.patterns_el:not(:nth-child(2n)){
+    margin-right: 20px;
+  }*/
+
+.element_header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.text {
+    width: 315px; /*если не задавать ширину тект выходит за родительский блок. А как можно задать свойство, типа auto, чтобы дальше родительского дива не выходил?*/
+    margin-right: 30px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;    
+    color: #5D5D5D;
+}
+
+.price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.photo_el {
+    width: 360px;
+    height: 420px;
+}
+
+.background_el {
+    background: #F7E4E2;
+    align-content: center;
+}
+
+.narrow_photo { /*почему не работает свойство align-self: center?*/
+    width: 142px;
+    height: 420px;
+    display: block;
+    margin-left: auto; /*так правильно выравнивать?*/
+    margin-right: auto;
+}
+
+.browse_all_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #FF6A6A;
+    width: 210px;
+    height: 47px;
+    display: flex;
+}
+
+.browse_all_link {
+    margin: auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+}
+
+.footer_top_bottom_background {
+    background: #222224;
+}
+
+.footer_top {
+    margin-top: 109px;
+    padding-top: 103px;
+    padding-bottom: 103px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_text {
+    margin-top: 16px;
+    width: 360px;
+    height: 34px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_middle_background {
+    background-image: url("images/footerBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/*не понял, как сделать фон адаптивным*/
+    height: 448px;
+    
+}
+
+.footer_middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_middle_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_icon_middle1 {
+    margin-top: 87px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_icon_middle2 {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 61px;
+}
+
+.footer_text_middle {
+    width: 360px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback {
+    display: flex;
+}
+
+.input {
+    width: 256px;
+    height: 49px;    
+    background: #E1E1E1;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #222224;
+}
+
+.button {
+    width: 100px;
+    height: 49px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    background: #F16D7F;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer_bottom_background {
+    background: #222224;
+}
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_bottom_text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;    
+    color: #FBFBFB;
+    margin: 30px 0;
+}
+
+.footer_bottom_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer_bottom_icon {
+    margin-top: 24px;
+    margin-bottom: 23px;
+    margin-right: 7px;
+}
+
+
