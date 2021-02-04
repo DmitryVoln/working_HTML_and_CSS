@@ -98,19 +98,41 @@
 }
 
 .picture {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 260px;
+    
+}
+
+.three_picture :nth-child(1) {
+    background-image: url("images/topPict1.jpg");
+}
+
+.three_picture :nth-child(2) {
+    background-image: url("images/topPict2.jpg");
+}
+
+.three_picture :nth-child(3) {
+    background-image: url("images/topPict3.jpg");
 }
 
 .picture_text {
-    position: absolute;
-    top: 100px;
-    right: 100px;
+  
+}
+
+.stretched_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1140px;
+    height: 180px;
+    background-image: url("images/accessories.jpg");
 }
 
 .stretched {
-    position: absolute;
-    top: 55px;
-    right: 500px;
+    
 }
 
 .top_info {
