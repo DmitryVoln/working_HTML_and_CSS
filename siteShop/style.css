@@ -193,7 +193,7 @@
     align-content: center;
 }
 
-.narrow_photo { /*почему не работает свойство align-self: center?*/
+.narrow_photo { /*почему не работает свойство  align-self: center?*/
     width: 142px;
     height: 420px;
     display: block;
@@ -390,5 +390,3 @@
     margin-bottom: 23px;
     margin-right: 7px;
 }
-
-
