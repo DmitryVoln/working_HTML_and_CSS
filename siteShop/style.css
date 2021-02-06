@@ -337,7 +337,7 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-    text-align: center;
+    padding: 20px;
     color: #222224;
 }
 
@@ -348,6 +348,7 @@
     border-top-right-radius: 10px;
     border: none;
     background: #F16D7F;
+    cursor: pointer;
 
     font-family: Lato;
     font-style: normal;
