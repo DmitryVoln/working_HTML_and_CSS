@@ -105,6 +105,16 @@
     position: absolute;
     top: 100px;
     right: 100px;
+    width: 160px;
+    height: 50px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .stretched {
@@ -233,17 +243,13 @@
 }
 
 .browse_all_button {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     border: 1px solid #FF6A6A;
     width: 210px;
     height: 47px;
-    display: flex;
-}
-
-.browse_all_link {
-    margin: auto;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -251,10 +257,13 @@
     line-height: 19px;
     color: #F26376;
     text-decoration: none;
+    text-align: center;
 }
+
 
 .footer_top_bottom_background {
     background: #222224;
+    min-height: 361px;
 }
 
 .footer_top {
@@ -420,4 +429,82 @@
     margin-top: 24px;
     margin-bottom: 23px;
     margin-right: 7px;
+}
+
+
+/*catalog_page*/
+
+.catalog_wrapper_title {
+    background: #F8F3F4;
+    margin-bottom: 51px;
+}
+
+.catalog_content_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 148px;
+}
+
+.catalog_title_new_text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.catalog_title_links {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.catalog_title_link {
+    text-decoration: none;
+}
+
+.catalog_content_subtitle {
+    display: flex;
+    margin-bottom: 64px;
+}
+.catalog_content_subtitle_menu_1 {
+    display: flex;
+    margin-right: 320px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.catalog_content_subtitle_menu_2{
+    display: flex;
+    margin-right: 28px;
+    align-items: center;
+    margin-right: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.catalog_content_subtitle_menu_text {
+    margin-right: 5px;
+}
+
+
+/*product page*/
+
+.carucel {
+    display: block;
+ align-items: center;
 }
