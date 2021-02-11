@@ -5,23 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="navbar">
         <div class="navbar_wrapper container">
-            <div class="navbar_icons">
-                <div class="navbar_icons_left">
+            <nav class="navbar_icons">
+                <nav class="navbar_icons_left">
                     <a href="#"><img src="images/ring.png" class="navbar_icon1" alt="ring"></a>
                     <a href="#"><img src="images/lens.png" class="navbar_icon2" alt="lens"></a>
-                </div>
-                <div class="navbar_icons_right">
+                </nav>
+                <nav class="navbar_icons_right">
                     <a href="#"><img src="images/stripes.png" class="navbar_icon3" alt="stripes"></a>
                     <a href="#"><img src="images/body.png" class="navbar_icon4" alt="body"></a>
                     <a href="#"><img src="images/basket.png" class="navbar_icon5" alt="basket"></a>
-                </div>
-            </div>
+                </nav>
+            </nav>
         </div>
     </header>
     <!--как я понял, верхняя фотография не идет в обертку, где max-width: 1140px?-->
@@ -36,96 +41,154 @@
     <div class="content_middle container">
         <div class="three_picture">
             <div class="picture">
-                <img src="images/30% OFF FOR WOMEN.png" class="picture_text" alt="30% off">
+                <img src="images/topPict1.jpg" alt="FOR WOMEN">
+                <a href="product.html" class="picture_text">
+                    <p style="margin: 0;">30% OFF</p>
+                    <p style="font-weight: 700; font-size: 24px;margin: 0; color: rgb(199, 18, 54) ;">FOR WOMEN</p>
+                </a>
             </div>
             <div class="picture">
-                <img src="images/HOT DEAL FOR MEN.png" class="picture_text" alt="30% off">
+                <img src="images/topPict2.jpg" alt="FOR MEN">
+                <a href="catalog_man.html" class="picture_text">
+                    <p style="margin: 0;">HOT DEAL</p>
+                    <p style="font-weight: 700; font-size: 24px;margin: 0; color: rgb(199, 18, 54) ;">FOR MEN</p>
+                </a>
             </div>
             <div class="picture">
-                <img src="images/NEW ARRIVALS FOR KIDS.png" class="picture_text" alt="30% off">
+                <img src="images/topPict3.jpg" alt="FOR KIDS">
+                <a href="#" class="picture_text">
+                    <p style="margin: 0;">NEW ARRIVALS</p>
+                    <p style="font-weight: 700; font-size: 24px;margin: 0; color: rgb(199, 18, 54) ;">FOR KIDS</p>
+                </a>
             </div>
         </div>
-        <div class="stretched_picture">
-            <img src="images/LUXIROUS & TRENDY ACCESORIES.png" class="picture_text stretched" alt="30% off">
+        <div class="stretched_picture picture">
+            <img src="images/accessories.jpg" alt="FOR WOMEN">
+            <a href="#" class="picture_text stretched" style="width: 180px;">
+                <p style="margin: 0;">LUXIROUS & TRENDY</p>
+                <p style="font-weight: 700; font-size: 24px;margin: 0; color: rgb(199, 18, 54) ;">ACCESORIES</p>
+            </a>
         </div>
         <div class="top_info">
             <h1 class="info">Fetured Items</h1>
             <p class="info_items">Shop for items based on what we featured in this week</p>
         </div>
-        <div class="patterns">
-            <div class="patterns_el">
-                <div class="description">
-                    <div class="picture_el">
-                        <img src="images/pattern1.jpg" class="photo_el" alt="men's photo">
+        <div class="cards">
+            <div class="card">
+                <div class="card_picture">
+                    <img src="images/pattern1.jpg" class="card_img" alt="men's photo">
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
-            <div class="patterns_el">
-                <div class="description">
+            <div class="card">
+                <div class="card_picture">
                     <div class="picture_el">
                         <div class="background_el">
                             <img src="images/pattern2.jpg" class="photo_el narrow_photo" alt="men's photo">
                         </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
-            <div class="patterns_el">
-                <div class="description">
+            <div class="card">
+                <div class="card_picture">
                     <div class="picture_el">
-                        <img src="images/pattern3.jpg" class="photo_el" alt="men's photo">
+                        <div class="background_el">
+                            <img src="images/pattern3.jpg" class="photo_el narrow_photo" alt="men's photo">
+                        </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
-            <div class="patterns_el">
-                <div class="description">
-                    <div class="picture_el">
-                        <img src="images/pattern4.jpg" class="photo_el" alt="men's photo">
+            <div class="card">
+                <div class="card_picture">
+                    <img src="images/pattern1.jpg" class="card_img" alt="men's photo">
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
-            <div class="patterns_el">
-                <div class="description">
-                    <div class="picture_el">
-                        <img src="images/pattern5.jpg" class="photo_el" alt="men's photo">
+            <div class="card">
+                <div class="card_picture">
+                    <img src="images/pattern1.jpg" class="card_img" alt="men's photo">
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
-            <div class="patterns_el">
-                <div class="description">
-                    <div class="picture_el">
-                        <img src="images/pattern6.jpg" class="photo_el" alt="men's photo">
+            <div class="card">
+                <div class="card_picture">
+                    <img src="images/pattern1.jpg" class="card_img" alt="men's photo">
+                    <div class="card_hover">
+                        <div class="button">
+                            <span>Add to Cart</span>
+                        </div>
                     </div>
-                    <h2 class="element_header">ELLERY X M'O CAPSULE</h2>
-                    <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool
+                </div>
+                <div class="card_info">
+                    <h2 class="card_title">ELLERY X M'O CAPSULE</h2>
+                    <p class="card_description">Known for her sculptural takes on traditional tailoring, Australian
+                        arbiter of cool
                         Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="card_price">$52.00</p>
                 </div>
             </div>
 
         </div>
-        <div class="browse_all_button">
-            <a href="#" class="browse_all_link">Browse All Product</a></li>
-        </div>
+        <button type="submit" class="browse_all_button">
+            Browse All Product
+        </button>
     </div>
     <div class="footer_top_bottom_background">
         <div class="container">

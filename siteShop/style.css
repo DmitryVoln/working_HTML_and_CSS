@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.navbar {
+.navbar_local {
     width: 100%;
     height: 75px;
     background: #222222;
@@ -95,44 +95,34 @@
     justify-content: space-between;
     margin-bottom: 30px;
     margin-top: 65px;
+    flex-grow: 1;
 }
 
 .picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: 260px;
-    
-}
-
-.three_picture :nth-child(1) {
-    background-image: url("images/topPict1.jpg");
-}
-
-.three_picture :nth-child(2) {
-    background-image: url("images/topPict2.jpg");
-}
-
-.three_picture :nth-child(3) {
-    background-image: url("images/topPict3.jpg");
+    position: relative;
+    /*gap: ;*/
 }
 
 .picture_text {
-  
-}
-
-.stretched_picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1140px;
-    height: 180px;
-    background-image: url("images/accessories.jpg");
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 160px;
+    height: 50px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .stretched {
-    
+    position: absolute;
+    top: 55px;
+    right: 500px;
 }
 
 .top_info {
@@ -162,21 +152,52 @@
     color: #9F9F9F;
 }
 
-.patterns {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.patterns_el {
+.card {
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 360px;
 }
 
 /*.patterns_el:not(:nth-child(2n)){
     margin-right: 20px;
   }*/
 
-.element_header {
+.card_picture {
+    position: relative;
+    width: 100%;
+}
+
+.card_hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5D5D5D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0,5;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.card_picture:hover .card_hover {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.card_button {
+    width: 50px;
+    height: 15px;
+}
+
+.card_title {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -185,7 +206,7 @@
     color: #000000;
 }
 
-.text {
+.card_description {
     width: 315px; /*если не задавать ширину тект выходит за родительский блок. А как можно задать свойство, типа auto, чтобы дальше родительского дива не выходил?*/
     margin-right: 30px;
     font-family: Lato;
@@ -196,7 +217,7 @@
     color: #5D5D5D;
 }
 
-.price {
+.card_price {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -205,9 +226,9 @@
     color: #F16D7F;
 }
 
-.photo_el {
-    width: 360px;
-    height: 420px;
+.card_img {
+    width: 100%;
+    height: auto; /*второй параметр авто, чтобы элемент сам правильно масштабировался*/
 }
 
 .background_el {
@@ -215,7 +236,7 @@
     align-content: center;
 }
 
-.narrow_photo { /*почему не работает свойство align-self: center?*/
+.narrow_photo { /*почему не работает свойство  align-self: center?*/
     width: 142px;
     height: 420px;
     display: block;
@@ -224,17 +245,13 @@
 }
 
 .browse_all_button {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     border: 1px solid #FF6A6A;
     width: 210px;
     height: 47px;
-    display: flex;
-}
-
-.browse_all_link {
-    margin: auto;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -242,10 +259,13 @@
     line-height: 19px;
     color: #F26376;
     text-decoration: none;
+    text-align: center;
 }
+
 
 .footer_top_bottom_background {
     background: #222224;
+    min-height: 361px;
 }
 
 .footer_top {
@@ -359,7 +379,7 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-    text-align: center;
+    padding: 20px;
     color: #222224;
 }
 
@@ -370,6 +390,7 @@
     border-top-right-radius: 10px;
     border: none;
     background: #F16D7F;
+    cursor: pointer;
 
     font-family: Lato;
     font-style: normal;
@@ -412,4 +433,99 @@
     margin-right: 7px;
 }
 
+
+/*catalog_page*/
+
+.catalog_wrapper_title {
+    background: #F8F3F4;
+    margin-bottom: 51px;
+}
+
+.catalog_content_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 148px;
+}
+
+.catalog_title_new_text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.catalog_title_links {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.catalog_title_link {
+    text-decoration: none;
+}
+
+.catalog_content_subtitle {
+    display: flex;
+    margin-bottom: 64px;
+}
+.catalog_content_subtitle_menu_1 {
+    display: flex;
+    margin-right: 320px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.catalog_content_subtitle_menu_2{
+    display: flex;
+    margin-right: 28px;
+    align-items: center;
+    margin-right: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.catalog_content_subtitle_menu_text {
+    margin-right: 5px;
+}
+
+
+/*product page*/
+
+.carousel_size {
+   width: auto;
+   height: 777px;
+}
+
+.w-50 {
+    height: 724px;
+    margin-bottom: 24px;
+}
+
+.caorusel_picture {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+}
 
