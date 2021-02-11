@@ -161,7 +161,7 @@
 .card {
     margin-bottom: 30px;
     width: 100%;
-    max-width: 360px;
+    max-width: 360px; /*не задаем фиксированно, чтобы, н-р на телефоне при разрешении менее 360 зч карточка не уходила за края*/
 }
 
 /*.patterns_el:not(:nth-child(2n)){
@@ -177,25 +177,48 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #5D5D5D;
+    background-color: rgba(58, 56, 56, 0.86);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0,5;
-    visibility: hidden;
+    transition: opacity 0.3s ease; /*плавное изменение прозрачности*/
+    opacity: 0;
+    visibility: hidden; /*в мобильниых устройствах можно ткнуть даже при hidden*/
     top: 0;
     left: 0;
 }
 
 .card_picture:hover .card_hover {
     visibility: visible;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .card_button {
-    width: 50px;
-    height: 15px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    outline: none;
+    background: none;
+    padding: 10px 16px 9px 13px;
+    font-size: 14px;
+    font-family: Lato;
+
+    display: inline-block;
+    background: none;
+    align-items: center;
 }
+
+.card_button:hover {
+    background-color: #F16D7F;
+    border-color: #F16D7F;
+
+}
+
+.card_info {
+    width: 100%;
+    height: 160px;
+    padding: 24px 20px 20px;
+    background-color: #f8f8f8;
+} 
 
 .card_title {
     font-family: Lato;
@@ -207,8 +230,7 @@
 }
 
 .card_description {
-    width: 315px; /*если не задавать ширину тект выходит за родительский блок. А как можно задать свойство, типа auto, чтобы дальше родительского дива не выходил?*/
-    margin-right: 30px;
+    /*если не задавать ширину тект выходит за родительский блок. А как можно задать свойство, типа auto, чтобы дальше родительского дива не выходил?*/
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
@@ -229,6 +251,7 @@
 .card_img {
     width: 100%;
     height: auto; /*второй параметр авто, чтобы элемент сам правильно масштабировался*/
+    align-self: flex-start; /*чтобы в сафари хорошо отображался, зачем не знаю*/
 }
 
 .background_el {
@@ -339,7 +362,7 @@
     margin-right: auto;
 }
 
-.footer_icon_middle2 {
+.footer_icon_middle_2 {
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
