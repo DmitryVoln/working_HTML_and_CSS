@@ -315,7 +315,7 @@
 }
 
 .footer_middle_background {
-    background-image: url("images/footerBackground.jpg");
+    background-image: url("/footerBackground.feb6c801.jpg");
     background-repeat: no-repeat;
     background-size: cover;/*не понял, как сделать фон адаптивным*/
     height: 448px;
@@ -541,3 +541,6 @@
     background-color: #5D5D5D;
 }
 
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
