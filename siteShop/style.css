@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.navbar {
+.navbar_local {
     width: 100%;
     height: 75px;
     background: #222222;
@@ -505,9 +505,34 @@
 
 /*product page*/
 
-.carucel {
-    display: block;
- align-items: center;
+.carousel_wrapper {
+    background-color: #F7F7F7;;
+}
+
+.carousel {
+
+}
+
+.carousel-item {
+    width: 600px;
+    
+    
+}
+
+.carousel_img_wrapper {
+    margin: 0 auto;
+}
+
+.carousel_button {
+    background-color: #331818;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(42, 42, 42, 0.15);
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(42, 42, 42, 0.15);
 }
 
 /*cart page*/
