@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
 </head>
+
 <body>
     <header class="navbar_local">
         <div class="navbar_wrapper container">
@@ -26,39 +27,37 @@
             </nav>
         </div>
     </header>
-    <div class="content_top">
-        <div class="top_box container">
-            SHOPPING CART
-        </div>
+    <div class="registration_wrapper_title">
+        <h1 class="registration_title_text">REGISTRATION</h1>
     </div>
-    <div class="cart_content container">
-        <section class="cart_cards">
-            <div class="cart_card">
-                <button class="cart_button">X</button>
-                <img src="images/cart/card1.png" class="cart_picture" alt="">
-                <div class="cart_card_info">
-                    <h2>main</h2>
-                    <li>Price</li>
-                    <li>Color</li>
-                    <li>Size</li>
-                    <li>Quantity</li>
-                </div>
+    <div class="registration_content container">
+        <form action="" class="registration_data">
+            <p class="registration_text_underfield">Your name</p>
+            <input type="text" class="registration_field" placeholder="First Name">
+            <input type="text" class="registration_field" placeholder="Last Name">
+            <div class="registration_radio">
+                <input type="radio" name="male" value="male"> male<Br>
+                <input type="radio" name="male" value="female"> femaile<Br>    
             </div>
-            <div class="cart_card">
-                <button class="cart_button">X</button>
-                <img src="images/cart/card2.png" class="cart_picture" alt="">
-                <div class="cart_card_info">
-                    <h2>main</h2>
-                    <li>Price</li>
-                    <li>Color</li>
-                    <li>Size</li>
-                    <li>Quantity</li>
-                </div>
-            </div>
-        </section>
-        <form action="" class="cart_form">
-            jhgjgj
+            <p class="registration_text_abovefield">Login Details</p>
+            <input type="text" class="registration_field" placeholder="Email">
+            <input type="text" class="registration_field" placeholder="Password">
+            <p class="registration_text_underfield">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            <button class="registration_button">
+                JOIN NOW
+            </button>
         </form>
+        <div class="registration_common_info">
+            <p class="registration_common_info_title">LOYALTY HAS ITS PERKS</p>
+            <p class="registration_common_info_title">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li class="registration_li">15% OFF</li>
+                <li class="registration_li">15% OFF</li>
+                <li class="registration_li">15% OFF</li>
+                <li class="registration_li">15% OFF</li>
+                <li class="registration_li">15% OFF</li>
+            </ul>
+        </div>
     </div>
     <div class="footer_top_bottom_background">
         <div class="container">
@@ -141,5 +140,7 @@
             </div>
         </div>
     </div>
+    </div>
 </body>
+
 </html>

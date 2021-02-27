@@ -566,3 +566,93 @@
     background-color: #5D5D5D;
 }
 
+/*registartion_page*/
+
+.registration_wrapper_title {
+    background: #F8F3F4;
+    margin-bottom: 51px;
+    height: 148px;
+}
+
+.registration_title_text {
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.registration_content {
+    display: flex;
+}
+
+.registration_data {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin-right: 130px;
+}
+
+.registration_text_abovefield {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration_text_underfield {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 40px;
+}
+
+.registration_radio {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.registration_field {
+    margin-bottom: 20px;
+}
+
+.registration_button {
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    margin-bottom: 100px;
+}
+
+.registration_common_info_title {
+    width: 650px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.registration_li {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+}
