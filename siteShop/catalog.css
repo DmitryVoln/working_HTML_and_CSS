@@ -1,0 +1,102 @@
+@import "style.css";
+
+.catalog_content_subtitle_filter .catalog_content_subtitle_wrapper {
+    display: flex;
+    gap: 30px; /*изучить*/
+}
+
+.catalog_content_subtitle_column {
+    width: calc(100% / 3);
+    height: 30px;
+    position: relative; /*чтобы лежащий ниже контент на странице не скакал при открытии фильтра*/
+}
+
+.filter_main_inline {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.filter_icon {
+    background-image: url("images/catalog/filter_icon.svg");
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+.filter_main_summary {
+    user-select: none; /*чтобы мышкой нельзя было выделить текст*/
+    outline: none; /*убираем рамку вокруг фильтра*/
+}
+
+
+.filter_main {
+    position: absolute; /*чтобы лежащий ниже контент на странице не скакал при открытии фильтра*/
+    top: 0; /*по умолчанию*/
+    left: 0; /*по умолчанию*/
+    display: block; /*для браузера, чтобы не отображал стрелку в фильтре*/
+    max-height: 21px; /*не понял зачем*/
+    overflow: hidden; /*чтобы текст не повлялся раньше выплывающего окна при анимации*/
+    transition: max-height 0.3s ease-in; /*анимация - изучить*/
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.filter_main[open] { /*атрибут опен  работает при нажатии(открытии)*/
+    position: relative; /*не понимаю зачем(вероятно из-за position: absolute в верхнем блоке!), но без него не работает z-index*/
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 360px;
+    max-height: 530px;
+    z-index: 2;
+    top: -20px;
+    left: -20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.filter_main[open] .filter_icon {
+    background-color: yellow;
+}
+
+.filter_main[open] .filter_text {
+    background-color: yellow;
+}
+
+
+.filter_category_summary {
+    outline: none; /*убираем рамку вокруг фильтра*/
+}
+
+.filter_category_header {
+    border-left: 5px solid #eeff55;
+    border-bottom: 1px solid #ebebee;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 11px;
+    transition: color 0.3s ease-out;
+}
+
+.filter_category_main[open] .filter_category_header {
+    color: rgba(238, 79, 16, 0.856);
+}
+
+.filter_category_list {
+    margin-top: 30px;
+}
+
+.filter_category_item {
+    list-style-type: none;
+}
+
+.filter_main_text {
+    margin-top: 50px;
+}
+
+
+/*аккуратно применять, ломает другие свойоства дисплей, если помещать в других местах поместить(магия)*/
+::-webkit-details-marker {display: none;} /*для браузера, чтобы не отображал стрелку в фильтре*/;

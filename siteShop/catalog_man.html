@@ -7,7 +7,7 @@
         <title>catalog_man</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="catalog.css"> <!--переподключил стили-->
         <link rel="stylesheet" href="style.scss">
     </head>
     <body>
@@ -40,15 +40,30 @@
             <div class="catalog_content_subtitle_filter">
                 <section class="catalog_content_subtitle_wrapper">
                     <div class="catalog_content_subtitle_column">
-                        <details>
-                            <summary> <!-- как раблотает не знаю, сказали так сделать: обернуть тег summary тегом details и получился фильтр-->
-                                <span>Filter</span>
+                        <details class="filter_main">
+                            <summary class="filter_main_summary"> <!-- как работает не знаю, сказали так сделать: обернуть тег summary тегом details и получился фильтр-->
+                               <div class="filter_main_inline">
+                                    <span class="filter_text">Filter</span> <div class="filter_icon" style="padding-left: 10px;"></div>
+                               </div> 
+                                <details class="filter_category_main">
+                                    <summary class="filter_category_summary">
+                                        <span class="filter_category_header">CATEGORY</span>
+                                    </summary>
+                                        <div class="filter_category_list">
+                                            <li class="filter_category_item">A</li>
+                                            <li class="filter_category_item">B</li>
+                                            <li class="filter_category_item">C</li>
+                                            <li class="filter_category_item">D</li>
+                                            <li class="filter_category_item">E</li>
+                                        </div>
+                                </details>
                             </summary>
+                            <p class="filter_main_text">text</p>
+                            <p>text</p>
+                            <p>text</p>
                         </details>
                     </div>
-                    <div class="catalog_content_subtitle_column">
-
-                    </div>
+                    <div class="catalog_content_subtitle_column"></div>
                 </section>
             </div>
             <div class="catalog_content_subtitle_menu_2">
