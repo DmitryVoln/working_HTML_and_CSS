@@ -1,0 +1,34 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deals_wrapper {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.deals_row {
+    @include flex-center;
+    gap: 30px;
+    margin-bottom: 30px;
+    .deals_card {
+        @include flex-center;
+        flex-grow: 1;
+        height: 260px;
+        background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("images/topPict1.jpg");
+        background-position: center; /*чтобы картинка была по центру при сжатии страницы*/
+        background-size: 100%;
+        transition: background-size 0.2s ease-in; /*плавное увеличение картинки*/
+        &:hover { /*энд означает к родительскому классу deals_row прибавить ховер*/
+            background-size: 110%;
+        }
+    }
+    &_stretched {
+        .deals_card {
+            height: 180px;
+        }
+    }
+}
